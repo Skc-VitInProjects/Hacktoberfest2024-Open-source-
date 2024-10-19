@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Theme Change Using HTML</title>
+    <style>
+        /* Default light theme */
+        .light-theme {
+            background-color: white;
+            color: black;
+        }
+
+        /* Dark theme */
+        .dark-theme {
+            background-color: black;
+            color: white;
+        }
+
+        /* Switch buttons */
+        .theme-selector label {
+            margin-right: 10px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body class="light-theme">
+    <div class="theme-selector">
+        <label>Light Theme</label>
+        <input type="radio" name="theme" id="light" checked onclick="document.body.className='light-theme'">
+        
+        <label>Dark Theme</label>
+        <input type="radio" name="theme" id="dark" onclick="document.body.className='dark-theme'">
+    </div>
+
+    <h1>Welcome to Theme Switcher</h1>
+    <p>This is an example of how to change themes using only HTML inline elements and styles.</p>
+</body>
+</html>
